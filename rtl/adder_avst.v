@@ -23,6 +23,7 @@ module adder_avst(clk, reset, data_in, end_in, valid_in, ready_in,
     reg [1:0]  count_out;
     reg [31:0]     sum;
 
+
     always @(posedge clk) begin
         if (reset) begin
             data_out <= 0;
